@@ -1,4 +1,4 @@
-class FtoC extends ConsoleProgram {
+class AreaSin extends ConsoleProgram {
 
   /**
   * A program AreaSin.java that uses the Math.sin() function to calculate the area of a triangle, given two sides and the contained angle.

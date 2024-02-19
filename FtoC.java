@@ -9,6 +9,8 @@ class FtoC extends ConsoleProgram {
     
     // Declare variables
     int intTempFar;
+    double dblTempFar;
+    double dblTempCel;
     int intTempCel;
     
 
@@ -16,11 +18,12 @@ class FtoC extends ConsoleProgram {
     intTempFar = readInt("Enter the temperature in Fahrenhiet: ");
 
     // Calculate for the temperature in celsius
-    intTempCel = (intTempFar - 32) * 5 / 9;
+    dblTempFar = (double)intTempFar;
+    dblTempCel = (dblTempFar - 32) * 5 / 9;
+    intTempCel = (int)dblTempCel;
     
-
     // Show result
-    System.out.println("The temperature you enter in celsius is " + intTempCel + "°C");
+    System.out.println("The temperature you entered is " + intTempCel + "°C");
     
   }
 }
